@@ -1,0 +1,35 @@
+.go-back-menu-div {
+  color: #172306;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 25%;
+  margin-bottom: 75%;
+}
+
+.message {
+  font-size: 3rem;
+  display: block;
+}
+
+.shop-here-link-div {
+  background-color: #172306;
+  padding: 2rem;
+  width: 35%;
+  color: #b9d88e;
+  margin-top: 2.4rem;
+  font-size: 1.8rem;
+  text-align: center;
+  border-radius: 0.9rem;
+}
+
+.shop-here-link-div:hover {
+  background-color: #2e460c;
+}
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+/* color: #172306;
+background-color: #b9d88e; */

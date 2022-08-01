@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Lato", sans-serif;
+  overflow-x: hidden;
+}
+
+.div-error-message {
+  color: red;
+  width: 65%;
+  margin: 0 auto;
+  font-size: 2rem;
+}
+
+.span-error-message {
+  color: red;
+  font-size: 1.6rem;
+}
+
+main {
+  position: relative;
+}
+
+.order-success-message-div {
+  position: absolute;
+  top: 5.2rem;
+  right: 5.2rem;
+  z-index: 10;
+  padding: 2rem;
+  background-color: #101904;
+  font-size: 2rem;
+  color: #b9d88e;
+  border-radius: 0.9rem;
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+
+  transition: all 0.5s ease-in;
+}
+
+.order-success-message-animate {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translate(-30%);
+}
+
+.order-success-message {
+  margin-right: 1.2rem;
+}
+
+.order-success-message-close-button {
+  font-size: 2.4rem;
+  color: #101904;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: #b9d88e;
+  border-radius: 0.9rem;
+}
+
+.order-success-message-close-button:hover {
+  cursor: pointer;
+  background-color: #87a363;
+}
+
+.order-success-message-div-2 {
+  position: absolute;
+  top: 5.2rem;
+  right: 5.2rem;
+  z-index: 10;
+  padding: 2rem;
+  background-color: #101904;
+  font-size: 2rem;
+  color: #b9d88e;
+  border-radius: 0.9rem;
+  transform: translate(115%);
+  transition: all 0.5s ease-in;
+}
+
+a {
+  text-decoration: none;
+  border: transparent;
+}
+
+a:link {
+  text-decoration: none;
+  border: transparent;
+}
+
+a:visited {
+  text-decoration: none;
+  border: transparent;
+}
+
+a:hover {
+  text-decoration: none;
+  border: transparent;
+}
+
+a:active {
+  text-decoration: none;
+  border: transparent;
+}
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+/* color: #172306;
+background-color: #b9d88e; */

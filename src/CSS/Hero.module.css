@@ -1,0 +1,57 @@
+.div-hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to left, #c4dba100, #363a30bd),
+    url("../Images/heroImage3.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+.div-hero-text {
+  text-align: center;
+  width: 45%;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #b9d88e;
+  background-color: #17230687;
+  padding: 1.8rem;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  border-radius: 1.1rem;
+}
+
+.hero-h1 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.hero-downward-arrow {
+  padding: 1rem;
+  padding-left: 4.8rem;
+  padding-right: 4.8rem;
+  border-radius: 1.1rem;
+  margin-top: 2.4rem;
+  font-size: 2.4rem;
+  background-color: transparent;
+  border: none;
+  color: #b9d88e;
+}
+
+.hero-downward-arrow:hover {
+  background-color: #172306;
+  cursor: pointer;
+}
+
+/* .div-img img {
+  width: 100%;
+  height: 100%;
+} */
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/

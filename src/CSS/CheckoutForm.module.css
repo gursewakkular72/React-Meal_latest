@@ -1,0 +1,154 @@
+.form {
+  /* display: grid;
+  grid-template-columns: 50fr 50fr; */
+  margin-bottom: 6rem;
+
+  border: 1px solid black;
+  padding: 2.4rem;
+}
+
+.form-submission-message {
+  color: #172306;
+  font-size: 5rem;
+  transition: all 0.2ms;
+}
+
+.heading {
+  margin-bottom: 2.6rem;
+  font-size: 3.6rem;
+  color: #172306;
+}
+
+.asterisk-message {
+  font-size: 1.4rem;
+}
+
+.asterisk-message span {
+  color: red;
+  font-size: 1.8rem;
+}
+
+.form-content {
+  display: grid;
+  grid-template-columns: 50fr 50fr;
+}
+
+.credit-card-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+label {
+  display: block;
+}
+.form-content input,
+.form-content select {
+  margin-bottom: 0.4rem;
+}
+.personal-info,
+.card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal-info {
+  margin-right: 2rem;
+}
+
+label,
+select {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+select {
+  height: 5rem;
+}
+input,
+option {
+  height: 5rem;
+  font-size: 2rem;
+}
+
+.unit-house-number,
+.street-address-city,
+.province-postal-code {
+  display: flex;
+}
+
+.unit,
+.street-address {
+  width: 25%;
+  margin-right: 2rem;
+}
+.unit input,
+.street-address input {
+  width: 100%;
+}
+.house-number,
+.city {
+  width: 40%;
+}
+.house-number input,
+.city input {
+  width: 100%;
+}
+
+.province {
+  width: 50%;
+}
+
+.postal-code {
+  width: 50%;
+}
+
+.checkout-form-button {
+  display: flex;
+  justify-content: space-between;
+}
+.checkout-form-order-total {
+  align-self: flex-end;
+}
+
+.place-order-button button,
+.to-cart-button {
+  background-color: #172306;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  border: none;
+  color: #b9d88e;
+  border-radius: 0.9rem;
+}
+
+.place-order-button button:hover,
+.to-cart-button:hover {
+  cursor: pointer;
+  background-color: #2e460c;
+}
+
+label span {
+  color: red;
+}
+.checkout-form-order-total span {
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #172306;
+}
+
+/* .to-cart-button {
+  background-color: #172306;
+  color: #b9d88e;
+  padding: 1.2rem;
+  border-radius: 0.9rem;
+}
+
+.to-cart-button:hover {
+  background-color: #2e460c;
+} */
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+/* color: #172306;
+background-color: #b9d88e; */

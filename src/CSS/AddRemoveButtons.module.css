@@ -1,0 +1,24 @@
+.add-remove-buttons {
+  margin-left: auto;
+  margin-right: 0.7rem;
+}
+
+.item-amount {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1.6rem;
+}
+.btn {
+  background-color: #172306;
+  color: #b9d88e;
+  border: none;
+  padding: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  font-size: 2rem;
+}
+
+.btn:hover {
+  cursor: pointer;
+}

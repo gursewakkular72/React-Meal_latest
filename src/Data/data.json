@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": 0,
+      "name": "Veggie Bowl",
+      "description": "Brown rice, corn, avocado, corn, beans, green chilli and sprinkled with exotic spices",
+      "chef": "Jose Valley",
+      "price": "12.50",
+      "restaurant-name": "Coast Side"
+    },
+    {
+      "id": 0,
+      "name": "Veggie Bowl",
+      "description": "Brown rice, corn, avocado, corn, beans, green chilli and sprinkled with exotic spices",
+      "chef": "Jose Valley",
+      "price": "12.50",
+      "restaurant-name": "Coast Side"
+    }
+  ]
+}

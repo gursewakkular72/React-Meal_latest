@@ -1,0 +1,120 @@
+.div-cart {
+  background-color: #f1f7e8;
+  padding: 1.4rem;
+  margin: 0 auto;
+  margin-bottom: 2.4rem;
+  width: 60%;
+  font-size: 2rem;
+  border-radius: 0.9rem;
+}
+.div-close-button {
+  display: flex;
+  width: 100%;
+}
+
+.close-button {
+  border: none;
+  margin-left: auto;
+  background-color: transparent;
+}
+
+.close-button:hover {
+  cursor: pointer;
+}
+.table {
+  /* border: 2px solid black; */
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  /* border: 2px solid red; */
+  padding: 1.6rem;
+  padding-left: 0;
+}
+
+td button {
+  border: none;
+  background-color: transparent;
+}
+
+.heading {
+  color: #172306;
+  /* background-color: #e3efd2; */
+  border-bottom: 1px solid #d5e8bb;
+  text-align: left;
+  font-size: 2.4rem;
+}
+
+.header {
+  /* background-color: #d5e8bb; */
+  font-size: 1.4rem;
+}
+
+th,
+td {
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+  padding-left: 1rem;
+}
+
+.individual-items {
+  color: #172306;
+  background-color: #d5e8bb;
+  border-radius: 0.9rem;
+  font-size: 1.6rem;
+  border-bottom: 0.5px solid #172306;
+}
+
+.item-name {
+  text-transform: uppercase;
+}
+
+.button {
+  background-color: #172306;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  /* width: 50%;
+  height: 50%; */
+}
+
+.total-row {
+  border-collapse: separate;
+  background-color: #b9d88e;
+  border-spacing: 0 1rem;
+  font-size: 1.6rem;
+}
+.total {
+  text-transform: uppercase;
+}
+
+.div-buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.6rem;
+  font-size: 1.6rem;
+}
+
+.go-back-button,
+.checkout-button {
+  background-color: #172306;
+  color: #b9d88e;
+  padding: 1.2rem;
+  border-radius: 0.9rem;
+}
+
+.go-back-button:hover,
+.checkout-button:hover {
+  background-color: #2e460c;
+}
+
+/* - Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+/* color: #172306;
+background-color: #b9d88e; */
