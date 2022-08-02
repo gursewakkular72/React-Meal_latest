@@ -101,6 +101,10 @@ option {
   width: 50%;
 }
 
+.to-cart-button-link:hover {
+  border-bottom: red !important;
+}
+
 .checkout-form-button {
   display: flex;
   justify-content: space-between;

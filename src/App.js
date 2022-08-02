@@ -1,4 +1,4 @@
-import React, { useCallback, useState, useEffect } from "react";
+import React, { useState } from "react";
 
 import LandingPage from "./Components/LandingPage.js";
 
@@ -11,26 +11,15 @@ import Cart from "./Components/Cart.js";
 import Navigation from "./Components/Navigation.js";
 import { Routes, Route } from "react-router-dom";
 
-let menu;
-
 function App() {
   const [animateClass, setAnimateClass] = useState("");
 
-  const orderSubmitHandler = useCallback(() => {
+  const orderSubmitHandler = () => {
     setAnimateClass("order-success-message-animate");
-  });
+  };
 
-  const closeOrderSuccessMessageHandler = useCallback(() => {
+  const closeOrderSuccessMessageHandler = () => {
     setAnimateClass("");
-  });
-  useEffect(() => {
-    menu = document.getElementById("navigationSection");
-    console.log(menu, "from useEffect");
-  });
-  const scrollToNavigation = (e) => {
-    e.preventDefault();
-    console.log(menu);
-    menu.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -69,12 +58,3 @@ function App() {
 }
 
 export default App;
-
-{
-  /* <Routes>
-        <Route path="/" element={<Navigation></Navigation>}></Route>
-        <Route path="/" element={<Hero></Hero>}></Route>
-        <Route path="/" element={<Card></Card>}></Route>
-        <Route path="/" element={<Footer></Footer>}></Route>
-      </Routes> */
-}

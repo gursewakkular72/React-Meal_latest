@@ -24,6 +24,7 @@
 
 .shop-here-link-div:hover {
   background-color: #2e460c;
+  border-bottom: none !important;
 }
 
 /* - Font sizes (px)

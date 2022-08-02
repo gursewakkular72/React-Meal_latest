@@ -70,6 +70,7 @@ const reducer = (prevState, action) => {
     let creditCardExpiryMessage = "";
     let creditCardSecurityCodeMessage = "";
     const isfnameValid = action.payload.fname.length >= 2;
+
     if (!isfnameValid)
       fnameMessage = "First name should be atleast 2 characters long";
     const islnameValid = action.payload.lname.length >= 2;

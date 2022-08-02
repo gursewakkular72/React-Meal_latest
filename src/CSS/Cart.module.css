@@ -7,7 +7,7 @@
   font-size: 2rem;
   border-radius: 0.9rem;
 }
-.div-close-button {
+/* .div-close-button {
   display: flex;
   width: 100%;
 }
@@ -20,7 +20,7 @@
 
 .close-button:hover {
   cursor: pointer;
-}
+} */
 .table {
   /* border: 2px solid black; */
   border-collapse: collapse;
@@ -109,6 +109,11 @@ td {
 .go-back-button:hover,
 .checkout-button:hover {
   background-color: #2e460c;
+}
+
+.go-back-button-link:hover,
+.close-button-link:hover {
+  border-bottom: none !important;
 }
 
 /* - Font sizes (px)

@@ -84,6 +84,8 @@ const CheckoutForm = (props) => {
       codeOnCreditCard: codeOnCreditCard.current.value,
     };
 
+    console.log("payload", payload);
+
     submitHandler({ type: "checkout-form", payload });
 
     // const enteredData = {
@@ -98,7 +100,7 @@ const CheckoutForm = (props) => {
     //   province: province.current.value,
     //   postalCode: postalCode.current.value,
     // };
-    setShowSpinner(true);
+    // setShowSpinner(true);
   };
 
   if (
@@ -215,6 +217,8 @@ const CheckoutForm = (props) => {
             type="text"
             id="phone-number"
             name="phone-number"
+            placeholder="111-111-1111"
+            maxLength={12}
           ></input>
           {phoneNumberMessage !== "" && (
             <span className="span-error-message">{phoneNumberMessage}</span>
