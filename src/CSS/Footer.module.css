@@ -14,8 +14,11 @@
   align-items: baseline;
 }
 
-.div-footer p {
+.div-icons-source-link,
+.div-footer {
   font-size: 1.2rem;
+}
+.div-footer p {
   margin-left: 1rem;
 }
 .title {
@@ -23,13 +26,22 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.5rem;
-  /* background-color: red; */
 }
 
 .div-footer a:hover {
   border: none !important;
 }
 
+.div-icons-source-link {
+  margin-left: 1rem;
+}
+
+.div-icons-source-link a {
+  border-bottom: 0.2rem solid transparent;
+}
+.div-icons-source-link a:hover {
+  border-bottom: 0.2rem solid #172306 !important;
+}
 /* - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
 - Spacing system (px)

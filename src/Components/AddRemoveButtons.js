@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "../CSS/AddRemoveButtons.module.css";
 import { increaseButton, decreaseButton } from "../Icons/Icons";
 import { itemsSliceActions } from "../Store/store";

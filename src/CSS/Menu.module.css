@@ -23,14 +23,6 @@
   overflow: hidden;
 }
 
-/* .img-container {
-  background-image: url(attr(daa));
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-} */
-
 .image {
   width: 100%;
   height: 100%;
@@ -75,33 +67,6 @@
 
 .chef-name {
   font-size: 1rem;
-}
-
-/* .error-message {
-  width: 50%;
-  margin: 0 auto;
-  font-size: 3rem;
-  color: #172306;
-} */
-
-/* Spinner */
-
-.loader {
-  border: 16px solid #172306; /* Light grey */
-  border-top: 16px solid #3498db; /* Blue */
-  border-radius: 50%;
-  width: 120px;
-  height: 120px;
-  animation: spin 2s linear infinite;
-}
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /* - Font sizes (px)

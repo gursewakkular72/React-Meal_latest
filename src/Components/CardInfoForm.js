@@ -1,11 +1,11 @@
 import React, { useRef } from "react";
-
 // import CheckoutForm from "./CheckoutForm";
 import styles from "../CSS/CheckoutForm.module.css";
 
 const CardInfoForm = () => {
   const creditCardNumber = useRef(null);
 
+  // cardNumberChangeHandler adds a space after 4 digits
   const cardNumberChangeHandler = (e) => {
     const length = creditCardNumber.current.value.length;
 

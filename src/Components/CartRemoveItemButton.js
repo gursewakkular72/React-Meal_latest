@@ -1,6 +1,6 @@
 import React from "react";
 import { useDispatch } from "react-redux";
-import { increaseButton, decreaseButton, closeButton } from "../Icons/Icons";
+import { decreaseButton } from "../Icons/Icons";
 import { itemsSliceActions } from "../Store/store";
 import styles from "../CSS/CartAddReomveItemButton.module.css";
 
@@ -17,11 +17,9 @@ const CartRemoveItemButton = (props) => {
     );
   };
   return (
-    <React.Fragment>
-      <button onClick={removeItemsHandler} className={styles.button}>
-        {decreaseButton}
-      </button>
-    </React.Fragment>
+    <button onClick={removeItemsHandler} className={styles.button}>
+      {decreaseButton}
+    </button>
   );
 };
 

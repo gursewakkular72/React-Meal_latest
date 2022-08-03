@@ -1,19 +1,17 @@
-import React, { useState, useEffect } from "react";
-import { items } from "../Data/data.js";
+import React, { useEffect } from "react";
 import styles from "../CSS/Menu.module.css";
 import { ratingIcon } from "../Icons/Icons";
-import { useSelector } from "react-redux";
 import AddRemoveButton from "./AddRemoveButtons.js";
 import useHttp from "../CustomHooks/use-http.js";
 import Spinner from "./Spinner.js";
 import Error from "./Error.js";
+import { FETCH_URL } from "../JS/config";
 
 const Menu = () => {
-  // const [numberOfitems, setNumberOfItems] = useState(0);
   const { isLoading, error, dishes, sendRequest } = useHttp();
 
   useEffect(() => {
-    sendRequest("https://router-da674-default-rtdb.firebaseio.com/items.json");
+    sendRequest(FETCH_URL);
   }, [sendRequest]);
 
   const menuItems =
@@ -22,7 +20,11 @@ const Menu = () => {
           return (
             <div className={styles["div-menu-section1"]} key={item.id}>
               <div className={styles["div-menu-image-container"]}>
-                <img className={styles.image} src={item.image}></img>
+                <img
+                  className={styles.image}
+                  alt={"food-item"}
+                  src={item.image}
+                ></img>
               </div>
               <div className={styles["div-menu-sub-section1"]}>
                 <span className={styles["item-rating"]}>
@@ -44,7 +46,6 @@ const Menu = () => {
                   name={item.name}
                   price={item.price}
                   id={item.id}
-                  // count={item.count}
                 ></AddRemoveButton>
               </div>
             </div>
@@ -61,7 +62,6 @@ const Menu = () => {
           {menuItems}
         </div>
       )}
-      {/* <img src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"></img> */}
     </React.Fragment>
   );
 };

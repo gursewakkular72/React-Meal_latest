@@ -1,8 +1,6 @@
-import { createSlice, configureStore, current } from "@reduxjs/toolkit";
-import finalPropsSelectorFactory from "react-redux/es/connect/selectorFactory";
-import { items } from "../Data/data";
-// import { items } from "../Data/data.js";
+import { createSlice, configureStore } from "@reduxjs/toolkit";
 
+//intial state for the cart
 const initialState = { items: [], orderTotal: 0, totalItems: 0 };
 
 const itemsSlice = createSlice({
@@ -12,7 +10,7 @@ const itemsSlice = createSlice({
     addItem(state, action) {
       if (state.items.length === 0) {
         action.payload.count = 1;
-        console.log(typeof state.orderTotal);
+
         state.orderTotal = +action.payload.price + state.orderTotal;
         state.totalItems += 1;
         state.items.push(action.payload);
@@ -24,7 +22,7 @@ const itemsSlice = createSlice({
         //if the item found
         if (itemFoundIndex !== -1) {
           state.items[itemFoundIndex].count++;
-          console.log(typeof state.orderTotal);
+
           state.orderTotal = +action.payload.price + state.orderTotal;
           state.totalItems++;
         }
@@ -55,8 +53,6 @@ const itemsSlice = createSlice({
       } else {
         return;
       }
-
-      // console.log(current(state.items), "from remove");
     },
     totalPrice(state, action) {
       state.items.reducer((previous, current) => {}, 0);

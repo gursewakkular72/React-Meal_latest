@@ -4,7 +4,7 @@ import { HashLink } from "react-router-hash-link";
 
 const LinkButton = (props) => {
   return (
-    <div className={styles["go-back-menu-div"]}>
+    <div className={styles["go-back-menu-div"]} id={"cart"}>
       <span className={styles["message"]}>{props.message}</span>
       <HashLink className={styles["shop-here-link"]} smooth to={props.link}>
         <div className={styles["shop-here-link-div"]}>{props.buttonText}</div>

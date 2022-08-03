@@ -1,5 +1,5 @@
-import React, { useReducer, useState } from "react";
-// import { act } from "react-dom/test-utils";
+// eslint-disable-next-line no-unused-vars
+import React, { useReducer } from "react";
 
 const initalState = {
   isEmailValid: false,
@@ -55,6 +55,7 @@ const reducer = (prevState, action) => {
     };
   }
 
+  // form validation starts here.
   if (action.type === "checkout-form") {
     let fnameMessage = "";
     let lnameMessage = "";
@@ -81,7 +82,6 @@ const reducer = (prevState, action) => {
       action.payload.checkoutEmail.trim().length === 0
         ? false
         : action.payload.checkoutEmail.includes("@");
-    // console.log("chekcout email :", isCheckoutEmailValid);
 
     if (!isCheckoutEmailValid) checkoutEmailMessage = "email is invalid.";
     const isPhoneNumberValid = action.payload.phoneNumber.length === 10;
@@ -107,7 +107,6 @@ const reducer = (prevState, action) => {
       postalCodeMessage = "Please enter a valid postal code";
 
     // Credit Card info validation starts here.
-
     const isCardCardNumberValid = action.payload.creditCardNumber.length === 19;
     if (!isCardCardNumberValid)
       creditCardNumberMessage = "Please enter a valid card number";

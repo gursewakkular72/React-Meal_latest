@@ -8,10 +8,8 @@ import { HashLink } from "react-router-hash-link";
 import { itemsSliceActions } from "../Store/store";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { wait } from "../CustomHooks/JS/functions";
-
+import { wait } from "../JS/functions";
 import Spinner from "./Spinner";
-let isAllDataValid = false;
 
 const CheckoutForm = (props) => {
   const fname = useRef(null);
@@ -30,7 +28,6 @@ const CheckoutForm = (props) => {
   const codeOnCreditCard = useRef(null);
   const dispatch = useDispatch();
   const orderTotal = useSelector((state) => state.orderTotal);
-  const items = useSelector((state) => state.items);
   const navigate = useNavigate();
   const [showSpinner, setShowSpinner] = useState(false);
   const {
@@ -87,20 +84,6 @@ const CheckoutForm = (props) => {
     console.log("payload", payload);
 
     submitHandler({ type: "checkout-form", payload });
-
-    // const enteredData = {
-    //   fname: fname.current.value,
-    //   lname: lname.current.value,
-    //   email: checkoutEmail.current.value,
-    //   phoneNumber: phoneNumber.current.value,
-    //   unit: unit.current.value,
-    //   houseNumber: houseNumber.current.value,
-    //   streetAddress: streetAddress.current.value,
-    //   city: city.current.value,
-    //   province: province.current.value,
-    //   postalCode: postalCode.current.value,
-    // };
-    // setShowSpinner(true);
   };
 
   if (
@@ -119,18 +102,15 @@ const CheckoutForm = (props) => {
     isCreditCardExpiryValid &&
     isCreditCardSecurityCodeValid
   ) {
-    console.log("form can be submitted");
-
-    wait(2).then(() => {
+    setShowSpinner(true);
+    wait(1).then(() => {
       props.orderSubmitHandler();
       dispatch(itemsSliceActions.resetCart());
-      resetForm({ type: "reset-form" });
       navigate("/");
       setShowSpinner(false);
     });
+    resetForm({ type: "reset-form" });
 
-    console.log("is this priting after 2 seconds");
-    // setIsAllDataValid((prev) => (prev = true));
     fname.current.value = null;
     lname.current.value = null;
     checkoutEmail.current.value = null;
@@ -322,9 +302,7 @@ const CheckoutForm = (props) => {
             </div>
           </div>
         </div>
-        {/* <CardInfoForm></CardInfoForm> */}
 
-        {/* Credit Card Form */}
         <div className={styles["card-info"]}>
           <label
             className={styles["credit-card-number"]}

@@ -1,5 +1,5 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import styles from "../CSS/Cart.module.css";
 
 import CartAddItemButton from "./CartAddItemButton";
@@ -11,7 +11,6 @@ import LinkButton from "./LinkButton";
 const Cart = (props) => {
   const items = useSelector((state) => state.items);
   const orderTotal = useSelector((state) => state.orderTotal);
-  const dispatch = useDispatch();
 
   const cartItems = items.map((item) => {
     return (
@@ -50,9 +49,6 @@ const Cart = (props) => {
         ></LinkButton>
       ) : (
         <div className={styles["div-cart"]}>
-          {/* <div className={styles["div-close-button"]}>
-            <button className={styles["close-button"]}>{closeButton}</button>
-          </div> */}
           <table className={styles.table}>
             <thead>
               <tr className={styles.heading}>

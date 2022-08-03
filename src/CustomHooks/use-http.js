@@ -1,5 +1,5 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useCallback, useState } from "react";
-// import { sendRequest } from "./JS/functions";
 
 const useHttp = () => {
   const [isLoading, setIsLoading] = useState(true);

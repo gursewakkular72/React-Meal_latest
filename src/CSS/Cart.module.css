@@ -7,28 +7,13 @@
   font-size: 2rem;
   border-radius: 0.9rem;
 }
-/* .div-close-button {
-  display: flex;
-  width: 100%;
-}
 
-.close-button {
-  border: none;
-  margin-left: auto;
-  background-color: transparent;
-}
-
-.close-button:hover {
-  cursor: pointer;
-} */
 .table {
-  /* border: 2px solid black; */
   border-collapse: collapse;
   width: 100%;
 }
 
 td {
-  /* border: 2px solid red; */
   padding: 1.6rem;
   padding-left: 0;
 }
@@ -40,14 +25,13 @@ td button {
 
 .heading {
   color: #172306;
-  /* background-color: #e3efd2; */
+
   border-bottom: 1px solid #d5e8bb;
   text-align: left;
   font-size: 2.4rem;
 }
 
 .header {
-  /* background-color: #d5e8bb; */
   font-size: 1.4rem;
 }
 
@@ -76,8 +60,6 @@ td {
   padding-right: 1rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-  /* width: 50%;
-  height: 50%; */
 }
 
 .total-row {

@@ -1,6 +1,4 @@
 .form {
-  /* display: grid;
-  grid-template-columns: 50fr 50fr; */
   margin-bottom: 6rem;
 
   border: 1px solid black;
@@ -137,17 +135,6 @@ label span {
   text-transform: uppercase;
   color: #172306;
 }
-
-/* .to-cart-button {
-  background-color: #172306;
-  color: #b9d88e;
-  padding: 1.2rem;
-  border-radius: 0.9rem;
-}
-
-.to-cart-button:hover {
-  background-color: #2e460c;
-} */
 
 /* - Font sizes (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
