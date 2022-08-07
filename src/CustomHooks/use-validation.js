@@ -110,7 +110,7 @@ const reducer = (prevState, action) => {
     const isCardCardNumberValid = action.payload.creditCardNumber.length === 19;
     if (!isCardCardNumberValid)
       creditCardNumberMessage = "Please enter a valid card number";
-    console.log("number on the credit", action.payload.creditCardNumber);
+
     const isNameOnCreditCardValid = action.payload.nameOnCreditCard.length >= 2;
     if (!isNameOnCreditCardValid)
       nameOnCreditCardMessage =

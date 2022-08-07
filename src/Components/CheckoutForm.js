@@ -81,8 +81,6 @@ const CheckoutForm = (props) => {
       codeOnCreditCard: codeOnCreditCard.current.value,
     };
 
-    console.log("payload", payload);
-
     submitHandler({ type: "checkout-form", payload });
   };
 
@@ -384,7 +382,9 @@ const CheckoutForm = (props) => {
           <div className={styles["to-cart-button"]}>&larr; back to cart</div>
         </HashLink>
         <div className={styles["place-order-button"]}>
-          <button type="submit">Place the Order</button>
+          <button type="submit" aria-label="place-order">
+            Place the Order
+          </button>
         </div>
       </div>
     </form>

@@ -39,11 +39,15 @@ const AddRemoveButton = (props) => {
 
   return (
     <div className={styles["add-remove-buttons"]}>
-      <button onClick={removeItem} className={styles.btn}>
+      <button
+        onClick={removeItem}
+        className={styles.btn}
+        aria-label="remove-items"
+      >
         {decreaseButton}
       </button>
       <span className={styles["item-amount"]}>{count}</span>
-      <button onClick={addItem} className={styles.btn}>
+      <button onClick={addItem} className={styles.btn} aria-label="add-item">
         {increaseButton}
       </button>
     </div>

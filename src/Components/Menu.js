@@ -33,11 +33,11 @@ const Menu = () => {
                   {item.rating}
                 </span>
 
-                <h3 className={styles["restaurant-name"]}>
+                <h2 className={styles["restaurant-name"]}>
                   {item["restaurant-name"]}
-                </h3>
+                </h2>
 
-                <h4 className={styles["item-name"]}>{item.name}</h4>
+                <h3 className={styles["item-name"]}>{item.name}</h3>
                 <p className={styles["item-description"]}>{item.description}</p>
                 <span className={styles["chef-name"]}>Chef {item.chef}</span>
                 <span className={styles["item-price"]}>${item.price}</span>
