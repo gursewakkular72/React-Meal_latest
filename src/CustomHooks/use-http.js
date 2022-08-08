@@ -1,5 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useCallback, useState } from "react";
+import { timeout } from "../JS/functions";
+import { TIMEOUT_SEC, ERROR_MESSAGE } from "../JS/config";
 
 const useHttp = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -8,10 +10,12 @@ const useHttp = () => {
 
   const sendRequest = useCallback(async (url) => {
     try {
-      const response = await fetch(url);
+      const response = await Promise.race([fetch(url), timeout(TIMEOUT_SEC)]);
+
       if (!response.ok) {
         throw new Error(response.status);
       }
+
       const items = await response.json();
       setDishes(items);
       setIsLoading(false);
@@ -19,7 +23,7 @@ const useHttp = () => {
       setIsLoading(false);
       setDishes([]);
 
-      setError(`Unable to display the dishes. Please try later :(`);
+      setError(ERROR_MESSAGE);
     }
   }, []);
 

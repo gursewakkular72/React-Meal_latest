@@ -10,6 +10,7 @@ import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { wait } from "../JS/functions";
 import Spinner from "./Spinner";
+import { WAIT_TIME } from "../JS/config";
 
 const CheckoutForm = (props) => {
   const fname = useRef(null);
@@ -101,7 +102,7 @@ const CheckoutForm = (props) => {
     isCreditCardSecurityCodeValid
   ) {
     setShowSpinner(true);
-    wait(1).then(() => {
+    wait(WAIT_TIME).then(() => {
       props.orderSubmitHandler();
       dispatch(itemsSliceActions.resetCart());
       navigate("/");
