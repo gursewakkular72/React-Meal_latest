@@ -8,6 +8,9 @@ const AddRemoveButton = (props) => {
   const items = useSelector((state) => state.items);
   const dispatch = useDispatch();
   const id = props.id;
+  // the "count" variable keeps track of the amount of an individual item in the cart (its the number between "+" and "-" button in the menu).
+  // My concern is I am not using the useState() hook to implement this. I tried to use it, but doing so was re-rendering this component every time and causing my app to crash.
+  // So instead I used a regular variable. Is it appropriate to use a regular js variable instead of using a state here ?
   let count = 0;
 
   const addItem = () => {

@@ -9,9 +9,7 @@ import Navigation from "./Components/Navigation.js";
 import { Routes, Route } from "react-router-dom";
 import OrderSuccessMessage from "./Components/OrderSuccessMessage.js";
 
-// added this comment for a pull request
 function App() {
-  //state for displaying and hiding order success message
   const [animateClass, setAnimateClass] = useState("");
   const orderSubmitHandler = () => {
     setAnimateClass("order-success-message-animate");
