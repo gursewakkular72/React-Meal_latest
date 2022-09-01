@@ -102,12 +102,16 @@ const CheckoutForm = (props) => {
     isCreditCardSecurityCodeValid
   ) {
     setShowSpinner(true);
+    // As I am using a promise here, I was expecting this to stop here for 2 seconds and show a spinner. Then after two seconds I was intending to clear the form.
+    // But the execution does not stop. So Instead I chose to redirect the user to landing page right after they submit the form.
+    // is it possible to stop the execution here for 2 seconds ?
     wait(WAIT_TIME).then(() => {
       props.orderSubmitHandler();
       dispatch(itemsSliceActions.resetCart());
       navigate("/");
       setShowSpinner(false);
     });
+
     resetForm({ type: "reset-form" });
 
     fname.current.value = null;

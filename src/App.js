@@ -10,7 +10,6 @@ import { Routes, Route } from "react-router-dom";
 import OrderSuccessMessage from "./Components/OrderSuccessMessage.js";
 
 function App() {
-  //state for displaying and hiding order success message
   const [animateClass, setAnimateClass] = useState("");
   const orderSubmitHandler = () => {
     setAnimateClass("order-success-message-animate");
@@ -21,6 +20,7 @@ function App() {
 
   return (
     <React.Fragment>
+      {/* Hi Mitch */}
       <Navigation></Navigation>
       <main>
         <OrderSuccessMessage

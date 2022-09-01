@@ -1,5 +1,8 @@
 import { createSlice, configureStore } from "@reduxjs/toolkit";
 
+// I have used react-redux tool kit for this app. My concern is, is it not rendering the entire app every time when something changes in the redux-store as in the index.js file I have
+// the entire <App/> component as the child of the <Provider/> Component. I did some console.log()s and it seems like it does not render the entire app, but I am not sure if that is case.
+
 //intial state for the cart
 const initialState = { items: [], orderTotal: 0, totalItems: 0 };
 
