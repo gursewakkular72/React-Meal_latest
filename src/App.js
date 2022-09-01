@@ -21,6 +21,7 @@ function App() {
 
   return (
     <React.Fragment>
+      {/* Hi Mitch */}
       <Navigation></Navigation>
       <main>
         <OrderSuccessMessage
