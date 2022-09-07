@@ -1,4 +1,4 @@
-###React+Meal: Single page food ordering website.
+### React+Meal: Single page food ordering website.
 
 • Built using react and uses react-router to implement single page application functionalities.
 • Uses redux-toolkit to build an app-wide state for shopping cart and react portal to display order success message.
