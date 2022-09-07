@@ -1,7 +1,9 @@
 ### React+Meal: Single page food ordering website.
 
 • Built using react and uses react-router to implement single page application functionalities.
+
 • Uses redux-toolkit to build an app-wide state for shopping cart and react portal to display order success message.
+
 • Uses several react hooks: useEffect to make async calls, a custom hook to implement fetching of menu from
   firebase, and useReducer to implement checkout-form validation.
   
